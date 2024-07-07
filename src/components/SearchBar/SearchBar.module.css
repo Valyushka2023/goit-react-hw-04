@@ -1,0 +1,21 @@
+.inputFormSearchBar {
+    height: 26px;
+    width: 250px;
+    background-color: rgb(233, 233, 236);
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 18px;
+}
+
+.buttonSearchBar {
+    width: 100px;
+    height: 32px;
+    border: 2px solid  gray ;
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 18px;
+}
+

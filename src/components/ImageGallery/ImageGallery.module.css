@@ -1,0 +1,20 @@
+.containerImageGallery {
+  background-color: rgb(240, 234, 224);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 90%;
+  max-height: 80vh; 
+  padding: 24px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: auto; 
+}
+
+.itemImageGallery {
+  width: calc((100% - 48px) / 3);
+  list-style-type: none;
+  position: relative;
+}
