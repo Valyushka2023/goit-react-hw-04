@@ -14,3 +14,4 @@ const ImageGallery = ({ images, openModal }) => {
 };
 
 export default ImageGallery;
+

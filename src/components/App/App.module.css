@@ -1,7 +1,6 @@
 .containerApp {
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
   background-color: lightslategray;
   width: 1208px;
   padding: 20px;
@@ -39,10 +38,10 @@
   align-items: center;
 }
 
-.galleryContainer {
+/* .galleryContainer {
   width: 100%;
   max-width: 1200px;
   margin-top: 20px;
   overflow-y: auto;
-  max-height: 80vh; /* або будь-яка інша висота, яка підходить вашому дизайну */
-}
+  max-height: 80vh; 
+} */

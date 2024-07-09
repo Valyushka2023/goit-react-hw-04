@@ -12,3 +12,4 @@ const ImageCard = ({ image, onClick }) => {
 };
 
 export default ImageCard;
+
