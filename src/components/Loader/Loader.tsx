@@ -1,7 +1,9 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import css from './Loader.module.css';
 
-function Loader() {
+
+const Loader: React.FC = () => {
   const circleVariants = {
     animate: {
       scale: [1, 2, 1],
@@ -23,12 +25,11 @@ function Loader() {
           cy="25"
           r="20"
           fill="#007bff"
-          variants={circleVariants}
-          animate="animate"
+          custom={circleVariants} 
         />
       </svg>
     </div>
   );
-}
+};
 
 export default Loader;

@@ -1,7 +1,13 @@
-import PropTypes from 'prop-types';
+import React from 'react';
 import css from './ErrorMessage.module.css';
 
-const ErrorMessage = ({ message, onClose }) => (
+
+interface ErrorMessageProps {
+  message: string;
+  onClose: () => void;
+}
+
+const ErrorMessage: React.FC<ErrorMessageProps> = ({ message, onClose }) => (
   <div className={css.overlay}>
     <div className={css.error}>
       <p className={css.text}>{message}</p>
@@ -9,10 +15,5 @@ const ErrorMessage = ({ message, onClose }) => (
     </div>
   </div>
 );
-
-ErrorMessage.propTypes = {
-  message: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
 
 export default ErrorMessage;

@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import css from './SearchBar.module.css';
 
-const SearchBar = ({ onSubmit, setSearchError }) => {
-  const [searchInputValue, setSearchInputValue] = useState('');
 
-  const handleInputChange = (event) => {
+interface SearchBarProps {
+  onSubmit: (searchTerm: string) => void;
+  setSearchError: (error: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ onSubmit, setSearchError }) => {
+  const [searchInputValue, setSearchInputValue] = useState<string>('');
+
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchInputValue(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (searchInputValue.trim()) {
       onSubmit(searchInputValue.trim());
@@ -34,4 +40,3 @@ const SearchBar = ({ onSubmit, setSearchError }) => {
 };
 
 export default SearchBar;
-
